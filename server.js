@@ -1,15 +1,15 @@
 const express = require('express')
 const cors = require('cors')
-
-
 const app = express()
-app.use(cors())
+require('dotenv').config()
 
+
+app.use(cors())
 const port = 8000;
 
 
-const username = "sasuke"
-const password = "Sasuke0rinnegan"
+const username = process.env.USERNAME
+const password = process.env.PASSWORD
 
 app.get('/deals', async(req, res)=>{
     try{

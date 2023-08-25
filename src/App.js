@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react"
+import Card from "./components/Card"
+import Header from "./components/Header"
+
 
 
 const App=()=> {
@@ -20,11 +23,23 @@ const App=()=> {
     getDeals()
   }, [])
 
-  console.log(deals)
-  
+  //console.log(deals)
+
   return (
     <div className="App">
-     
+      <Header/>
+      <nav>
+        <button className="primary">Amazon</button>
+        <button className="primary" disabled>Walmart</button>
+        <button className="primary" disabled>Google Shopping</button>
+        <button className="primary" disabled>ebay</button>
+      </nav>
+      <div>
+        <h2>Best Deals</h2>
+        <div className="feed">
+          {deals?.map(deal=><Card key={deal.pos} item={deal}/>)}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235,235,235);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(50, 42, 51);
+}
+
+.app{
+    width: 330px;
+    height: 680px;
+    border-radius: 50px;
+    background: radial-gradient(circle,
+    rgb(236,236,236) 0%,
+    rgb(255,255,255) 80%);
+    padding: 60px, 30px;
+    box-shadow: rgba(0,0,0,0.1) 0 4px 12px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header p{
+    color: rgb(133,133,133);
+}
+
+
+.logo-container{
+    height: 50px;
+}
+
+h2{
+    font-weight: 400;
+    margin-bottom:0;
+
+}
+
+.logo-container img{
+    height: 100%;
+}
+nav::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    display: flex;
+    width: 330px;
+    overflow-x: scroll;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+button .primary{
+    border:none;
+    background-color: rgb(3, 140 ,140);
+    padding: 18px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+button .primary:disabled{
+    background-color: white;
+    color: rgb(172, 172, 172);
+}
+
+.card{
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display:flex;
+}
+
+.card h5,
+.card p{
+    margin: 0;
+
+}
+
+.card h5{
+    font-size: 12px;
+}
+
+card p{
+    font-size: 12px;
+    color: rgb(133,133,133);
+}
+
+.card .img-container{
+    height: 100%;
+    width: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .img-container img{
+    width: 150%;
+}
+
+.card .text-container{
+    width: 180px;
+    padding: 0 5px;
+}
+
+.circle{
+    background-color: rgb(3,140,140);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.feed{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.card .info-container{
+    position:relative;
+}
+
+.card .info-container a{
+    position:absolute;
+    top: 65px;
+    right: 5px;
+    text-decoration: none;
+    color: rgb(50, 43, 51);
+
+}

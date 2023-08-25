@@ -1,3 +1,13 @@
+const express = require('express')
+const cors = require('cors')
+
+
+const app = express()
+app.use(cors())
+
+const port = 8000;
+
+
 const username = "sasuke"
 const password = "Sasuke0rinnegan"
 
@@ -8,6 +18,7 @@ try{
         "domain":"com",
         "query":"deal of the day",
         "parse":true,
+        "pages":1
     }
     const response = await fetch("https://realtime.oxylabs.io/v1/queries", {
         method:"POST",
@@ -22,3 +33,5 @@ try{
 }catch(err){
     console.log(err)
 }
+
+app.listen(port, ()=>console.log(`listening on port: ${port}`))

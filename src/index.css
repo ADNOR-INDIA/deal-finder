@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
-.body{
+body{
     margin: 0;
     padding: 0;
     background-color: rgb(235,235,235);
@@ -10,12 +10,17 @@
     align-items: center;
     font-family: 'Poppins', sans-serif;
     color: rgb(50, 42, 51);
+    overflow-x: hidden;
 }
+#root{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
 
-.app{
-    width: 330px;
-    height: 680px;
-    border-radius: 50px;
+}
+.App{
+    background-color: green;
+    height: 100vh;
     background: radial-gradient(circle,
     rgb(236,236,236) 0%,
     rgb(255,255,255) 80%);
@@ -25,7 +30,11 @@
 
 header{
     display: flex;
+    padding: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     justify-content: space-between;
+    background-color: rgb(206, 206, 206);
 }
 
 header p{
@@ -34,6 +43,7 @@ header p{
 
 
 .logo-container{
+    margin-top: 20px;
     height: 50px;
 }
 
@@ -51,13 +61,14 @@ nav::-webkit-scrollbar{
 }
 nav{
     display: flex;
-    width: 330px;
+    padding: 20px;
+    padding-left: 10px;
     overflow-x: scroll;
     -ms-overflow-style:none;
     scrollbar-width:none;
 }
 
-button .primary{
+.primary{
     border:none;
     background-color: rgb(3, 140 ,140);
     padding: 18px;
@@ -69,20 +80,25 @@ button .primary{
 }
 
 
-button .primary:disabled{
+.primary:disabled{
     background-color: white;
     color: rgb(172, 172, 172);
 }
 
+.bottomOne{
+    padding-left: 50px;
+}
 .card{
-    height: 100px;
-    width: 100%;
+    height: auto;
+    width: 450px;
     padding: 5px;
     margin: 10px 0;
     background-color: white;
     border-radius: 10px;
     box-sizing: border-box;
     display:flex;
+    flex-direction: column;
+    margin-right: 25px;
 }
 
 .card h5,
@@ -126,10 +142,16 @@ card p{
     display: flex;
     justify-content: center;
 }
-
+.something{
+    padding:20px;
+}
 .feed{
-    height: 400px;
-    overflow-y: scroll;
+    width: 100vw;
+    height: 60vh;
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
 }
 
 .card .info-container{
